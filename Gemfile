@@ -10,6 +10,11 @@ group :development do
   gem 'rvm'
 end
 
+group :production do
+  gem 'therubyracer-heroku' # you will need this too
+  gem 'pg'
+end
+
 gem 'sqlite3', :group => [:development, :test]
 
 

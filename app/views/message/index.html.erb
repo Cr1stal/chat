@@ -8,13 +8,13 @@
       </ul>
     </td>
     <td>
-      <ul>
+      <ol>
         <% @users.each do |user| %>
             <% if user.active_user %>
                 <li><%=  user.username  %></li>
             <% end %>
         <% end %>
-      </ul>
+      </ol>
     </td>
   </tr>
 </table>
