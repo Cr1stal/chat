@@ -35,9 +35,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/user/login.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="17" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.875">
-              <folding>
-                <marker date="1339597702000" expanded="true" signature="78:205" placeholder="do ... end" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,16 +43,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/message/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="379" selection-end="379" vertical-scroll-proportion="-10.0">
+            <state line="5" column="16" selection-start="93" selection-end="93" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="241" selection-end="241" vertical-scroll-proportion="0.23751523">
+            <state line="43" column="140" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="113" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
@@ -102,8 +100,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20120614123244_add_column_active_to_user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/message_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/message/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/message/index.html.erb" />
       </list>
     </option>
   </component>
@@ -789,25 +787,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/user/login.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.875">
-          <folding>
-            <marker date="1339597702000" expanded="true" signature="78:205" placeholder="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="22" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.489335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="113" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -819,9 +801,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+        <state line="43" column="140" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/message/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="93" selection-end="93" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user/login.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="191" selection-end="191" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
@@ -833,16 +829,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/message/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="379" selection-end="379" vertical-scroll-proportion="-10.0">
+        <state line="9" column="13" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="241" selection-end="241" vertical-scroll-proportion="0.23751523">
+        <state line="0" column="113" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
