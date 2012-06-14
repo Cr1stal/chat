@@ -10,7 +10,7 @@ group :development do
   gem 'rvm'
 end
 
-gem 'sqlite3'
+gem 'sqlite3', :group => [:development, :test]
 
 
 # Gems used only for assets and not required
