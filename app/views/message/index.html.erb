@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <td>
+      <ul>
+        <% @messages.each do |message| %>
+            <li><%= message.user_id %> : <%= message.message %></li>
+        <% end %>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <% @users.each do |user| %>
+            <% if user.active_user %>
+                <li><%=  user.username  %></li>
+            <% end %>
+        <% end %>
+      </ul>
+    </td>
+  </tr>
+</table>
+<%= form_tag ('/message/create') do %>
+    <%= text_field_tag :field_message %>
+    <%= submit_tag ("Отправить") %>
+<% end %>
+<%= form_tag ('/user/exit') %>
+  <%= submit_tag ('Выйти') %>
