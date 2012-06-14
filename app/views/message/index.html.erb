@@ -3,7 +3,7 @@
     <td>
       <ul>
         <% @messages.each do |message| %>
-            <li><%= message.user_id %> : <%= message.message %></li>
+            <li><%= message.created_at.strftime("%I:%M%p") %> |   <%= message.user.username %>    :     <%= message.message %></li>
         <% end %>
       </ul>
     </td>
@@ -24,3 +24,4 @@
 <% end %>
 <%= form_tag ('/user/exit') %>
   <%= submit_tag ('Выйти') %>
+<!--.gsub("/\d\d:\d\d/").to_a
