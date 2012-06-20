@@ -1,1 +1,5 @@
-<% @messages.each do |message| %><li><div class="time"><%= message.created_at.to_i %></div> |   <%= message.user.username %>    :     <%= message.message %></li><% end %>
+<% @messages.each do |message| %>
+    <li>
+      <span class="time"><%= message.created_at.to_i %></span>&#9<span class="username"><%= message.user.username %></span>&#9<span class="message"><%= message.message %></span>
+    </li>
+<% end %>

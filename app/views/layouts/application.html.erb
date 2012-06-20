@@ -13,8 +13,16 @@
 <% flash.each do |key, msg| %>
     <%= content_tag :div, msg, :id => key  %>
   <% end %>
-<div id="container">
-    <%= yield %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span8">
+      <%= yield :message%>
+    </div>
+    <div class="span4">
+      <%= yield :user%>
+    </div>
+  </div>
+  <%= yield %>
 </div>
 </body>
 </html>

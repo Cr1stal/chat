@@ -1,21 +1,19 @@
-<table>
-  <tr>
-    <td>
-      <ul id="messages">
+<%  content_for :message do %>
+    <ol id="messages" >
         <% @messages.each do |message| %>
-            <li><div class="time"><%= message.created_at.to_i %></div> |   <%= message.user.username %>    :     <%= message.message %></li>
+            <li><span class="time"><%= message.created_at.to_i %></span>&#9&#9<span class="username"><%= message.user.username %></span>&#9&#9<span class="message"><%= message.message %></span></li>
         <% end %>
-      </ul>
-    </td>
-    <td>
-      <ul id="users">
-          <li><%=  @users.username  %></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-<input type="text" id="field_message" class="input-medium">
-<input type="button" class="button btn btn-primary" value="Отправить" >
-<%= form_tag ('/user/exit') %>
-  <%= submit_tag ('Выйти') %>
+    </ol>
+<% end %>
+<%  content_for :user do %>
+      <ol id="users">
+          <li><i class="icon-user icon-white"></i><%=  @users.username  %></li>
+      </ol>
+<% end %>
+<div class="control-group">
+      <br />
+      <input type="text" id="field_message" class="input-xlarge control-label">
+      <input type="button" class="button btn btn-primary " value="Отправить" >
+</div>
+<%= link_to "Выйти", "/user/exit" %>
 <!--.gsub("/\d\d:\d\d/").to_a  -->

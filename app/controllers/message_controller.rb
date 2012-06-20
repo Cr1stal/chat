@@ -34,7 +34,6 @@ class MessageController < ApplicationController
     @message.message = message
     if @message.save
         render "create", :layout => false, :formats => :html
-        flash[:notice] = "Message successfully added!"
        # redirect_to "/message/index"
     else
       if request.xhr?

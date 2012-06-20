@@ -7,7 +7,7 @@ $(function () {
             url:'/user/update',
             type: "post",
             success: function(data) {
-                $("ul#users").html(data);
+                $("ol#users").html(data);
             }
         });
         setTimeout(updateUser, 20000);
@@ -25,7 +25,7 @@ $(function () {
        });
    }, 20000); */
     setInterval(function(){
-        var last_date = $("ul#messages li:last div").html();
+        var last_date = $("ol#messages li:last span").html();
         var sendDate = "time="+last_date;
         $.ajax({
             url:'/message/refresh',
@@ -33,7 +33,8 @@ $(function () {
             data: sendDate,
             dateType:"html",
             success: function(data) {
-                $("ul#messages").append(data);
+                console.log(data);
+                $("ol#messages").append(data);
             }
         });
     }, 20000);
@@ -50,7 +51,7 @@ $(function () {
             },
             success: function(data) {
                 console.log(data)
-                $("ul#messages").append(data);
+                $("ol#messages").append(data);
                 $('input#field_message').val('');
             },
             error: function(){

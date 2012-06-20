@@ -22,7 +22,7 @@ Chat::Application.routes.draw do
   post "message/create"
   #get "message/create"
   #post "user/login" => 'user#create'
-  post "user/exit"
+  get "user/exit"
   get "message/refresh"
   post "message/refresh"
   post "user/update" => "user#update_user"
