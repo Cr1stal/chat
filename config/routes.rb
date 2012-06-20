@@ -15,7 +15,7 @@ Chat::Application.routes.draw do
   get "user/login"
   get "login" => "user#login"
   post "user" => "user#create"
-  get "message/index"
+  get "message/index", :as => "messages"
   get "message" => "message#index"
   #post "message" => "message#create"
   post "message/index"
@@ -23,6 +23,9 @@ Chat::Application.routes.draw do
   #get "message/create"
   #post "user/login" => 'user#create'
   post "user/exit"
+  get "message/refresh"
+  post "message/refresh"
+  post "user/update" => "user#update_user"
   #resources :message
   #resources :user
 

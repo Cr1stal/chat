@@ -1,27 +1,21 @@
 <table>
   <tr>
     <td>
-      <ul>
+      <ul id="messages">
         <% @messages.each do |message| %>
-            <li><%= message.created_at.strftime("%I:%M%p") %> |   <%= message.user.username %>    :     <%= message.message %></li>
+            <li><div class="time"><%= message.created_at.to_i %></div> |   <%= message.user.username %>    :     <%= message.message %></li>
         <% end %>
       </ul>
     </td>
     <td>
-      <ul>
-        <% @users.each do |user| %>
-            <% if user.active_user %>
-                <li><%=  user.username  %></li>
-            <% end %>
-        <% end %>
+      <ul id="users">
+          <li><%=  @users.username  %></li>
       </ul>
     </td>
   </tr>
 </table>
-<%= form_tag ('/message/create') do %>
-    <%= text_field_tag :field_message %>
-    <%= submit_tag ("Отправить") %>
-<% end %>
+<input type="text" id="field_message" class="input-medium">
+<input type="button" class="button btn btn-primary" value="Отправить" >
 <%= form_tag ('/user/exit') %>
   <%= submit_tag ('Выйти') %>
-<!--.gsub("/\d\d:\d\d/").to_a
+<!--.gsub("/\d\d:\d\d/").to_a  -->

@@ -20,18 +20,20 @@ gem 'sqlite3', :group => [:development, :test]
 
 # Gems used only for assets and not required
 # in production environments by default.
-#group :assets do
-#  gem 'sass-rails',   '~> 3.2.3'
-#  gem 'coffee-rails', '~> 3.2.1'
-
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'twitter-bootstrap-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
 
- # gem 'uglifier', '>= 1.0.3'
-#end
-
+ gem 'uglifier', '>= 1.0.3'
+end
+gem 'ruby-debug19'
 gem 'jquery-rails'
-
+gem 'hirb' , group: :development
+gem 'guard'
+gem 'guard-livereload'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

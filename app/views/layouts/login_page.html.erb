@@ -3,7 +3,6 @@
 <head>
   <title>Chat</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%# javascript_include_tag "jquery-1.7.2.min" %>
   <!--<meta http-equiv="refresh" content="30" />    -->
   <%= csrf_meta_tags %>
@@ -12,9 +11,9 @@
 
 <% flash.each do |key, msg| %>
     <%= content_tag :div, msg, :id => key  %>
-  <% end %>
-<div id="container">
-    <%= yield %>
-</div>
+<% end %>
+
+<%= yield %>
+
 </body>
 </html>

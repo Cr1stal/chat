@@ -12,4 +12,23 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require_tree .
+
+/*$(function () {
+    function updateContent()
+    {
+        var last_date = $("ul#messages li:last div").html();
+        var sendDate = "time="+last_date;
+        $.ajax({
+            url:'/message/refresh',
+            type: 'post',
+            data: sendDate,
+            dateType:"html",
+            success: function(data) {
+                $("ul#messages").append("<li>"+data+"</li>");
+            }
+        });
+    }
+
+});*/
