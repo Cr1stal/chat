@@ -29,7 +29,7 @@ group :assets do
 
  gem 'uglifier', '>= 1.0.3'
 end
-gem 'ruby-debug19'
+
 gem 'jquery-rails'
 gem 'hirb' , group: :development
 gem 'guard'
